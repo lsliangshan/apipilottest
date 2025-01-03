@@ -11,25 +11,31 @@
 ### 2. Usage
 
 ```javascript
-import { APIPILOT_FUNCTION_NAME } from "apipilottest";
+import { getRadioDetail } from "apipilottest";
 
-APIPILOT_FUNCTION_NAME({
-  data: APIPILOT_FUNCTION_ARGUMENTS,
-  headers: APIPILOT_FUNCTION_HEADERS,
+getRadioDetail({
+  data: {
+  pk: '99406937';
+},
+  headers: {
+},
 });
 ```
 
 > Recommended Usage
 
 ```javascript
-import { APIPILOT_FUNCTION_NAME } from "apipilottest/APIPILOT_DOMAIN_NAME";
+import { getRadioDetail } from "apipilottest/fm";
 
 // OR
 
-import { APIPILOT_FUNCTION_NAME } from "apipilottest/APIPILOT_DOMAIN_NAME/APIPILOT_FUNCTION_NAME";
+import { getRadioDetail } from "apipilottest/fm/getRadioDetail";
 
-APIPILOT_FUNCTION_NAME({
-  data: APIPILOT_FUNCTION_ARGUMENTS,
-  headers: APIPILOT_FUNCTION_HEADERS,
+getRadioDetail({
+  data: {
+  pk: '99406937';
+},
+  headers: {
+},
 });
 ```
